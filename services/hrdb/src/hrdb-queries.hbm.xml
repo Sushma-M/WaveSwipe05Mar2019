@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <sql-query name="NoOfEmployee">
+        <![CDATA[
+        select count(eid) from employee
+        ]]>
+    </sql-query>
+
+    <sql-query name="NoOfEmployee__count">
+        <![CDATA[
+        select count(*) from (select count(eid) from employee) wmTempTable
+        ]]>
+    </sql-query>
+
+    <sql-query name="SelectedEmployeeID">
+        <![CDATA[
+        select * from employee where eid=:data
+        ]]>
+    <query-param name="data" type="java.lang.Integer"/>
+    </sql-query>
+
+    <sql-query name="SelectedEmployeeID__count">
+        <![CDATA[
+        select count(*) from (select * from employee where eid=:data) wmTempTable
+        ]]>
+    <query-param name="data" type="java.lang.Integer"/>
+    </sql-query>
+
+    <sql-query name="noOfDepartments">
+        <![CDATA[
+        SELECT COUNT(NAME) FROM DEPARTMENT
+        ]]>
+    </sql-query>
+
+    <sql-query name="noOfDepartments__count">
+        <![CDATA[
+        select count(*) from (SELECT COUNT(NAME) FROM DEPARTMENT) wmTempTable
+        ]]>
+    </sql-query>
+
+    <sql-query name="EngineeringEmployees">
+        <![CDATA[
+        select * from EMPLOYEE where DEPTID=1
+        ]]>
+    </sql-query>
+
+    <sql-query name="EngineeringEmployees__count">
+        <![CDATA[
+        select count(*) from (select * from EMPLOYEE where DEPTID=1) wmTempTable
+        ]]>
+    </sql-query>
+
+    <sql-query name="ProfessionalServicesEmployees">
+        <![CDATA[
+        select * from EMPLOYEE where DEPTID=5
+        ]]>
+    </sql-query>
+
+    <sql-query name="ProfessionalServicesEmployees__count">
+        <![CDATA[
+        select count(*) from (select * from EMPLOYEE where DEPTID=5) wmTempTable
+        ]]>
+    </sql-query>
+
+    <sql-query name="SalesEmployees">
+        <![CDATA[
+        select * from EMPLOYEE where DEPTID=4
+        ]]>
+    </sql-query>
+
+    <sql-query name="SalesEmployees__count">
+        <![CDATA[
+        select count(*) from (select * from EMPLOYEE where DEPTID=4) wmTempTable
+        ]]>
+    </sql-query>
+
+    <sql-query name="GeneralAndAdminEmployees">
+        <![CDATA[
+        select * from EMPLOYEE where DEPTID=3
+        ]]>
+    </sql-query>
+
+    <sql-query name="GeneralAndAdminEmployees__count">
+        <![CDATA[
+        select count(*) from (select * from EMPLOYEE where DEPTID=3) wmTempTable
+        ]]>
+    </sql-query>
+
+    <sql-query name="MarketingEmployees">
+        <![CDATA[
+        select * from EMPLOYEE where DEPTID=2
+        ]]>
+    </sql-query>
+
+    <sql-query name="MarketingEmployees__count">
+        <![CDATA[
+        select count(*) from (select * from EMPLOYEE where DEPTID=2) wmTempTable
+        ]]>
+    </sql-query>
+
+    <sql-query name="NoOfDepartment">
+        <![CDATA[
+        SELECT COUNT(NAME) FROM DEPARTMENT
+        ]]>
+    </sql-query>
+
+    <sql-query name="NoOfDepartment__count">
+        <![CDATA[
+        select count(*) from (SELECT COUNT(NAME) FROM DEPARTMENT) wmTempTable
+        ]]>
+    </sql-query>
+
+    <sql-query name="TotalBudget">
+        <![CDATA[
+        select sum(budget) from department
+        ]]>
+    </sql-query>
+
+    <sql-query name="TotalBudget__count">
+        <![CDATA[
+        select count(*) from (select sum(budget) from department) wmTempTable
+        ]]>
+    </sql-query>
+</hibernate-mapping>
