@@ -3,7 +3,7 @@
     "description" : "Rest service swagger documentation",
     "name" : "RestServiceVirtualController"
   } ],
-  "basePath" : "${rest.googleapis.basepath}",
+  "basePath" : "${googleapis.basepath}",
   "paths" : {
     "" : {
       "x-WM-BASE_PATH" : "",
@@ -42,8 +42,8 @@
       "x-WM-RELATIVE_PATH" : "/"
     }
   },
-  "host" : "${rest.googleapis.host}",
-  "schemes" : [ "${rest.googleapis.scheme}" ],
+  "host" : "${googleapis.host}",
+  "schemes" : [ "${googleapis.scheme}" ],
   "swagger" : "2.0",
   "definitions" : {
     "bounds" : {

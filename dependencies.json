@@ -1,0 +1,9 @@
+[ {
+  "name" : "googlemaps",
+  "version" : "5.7",
+  "artifactType" : "PREFAB"
+}, {
+  "name" : "mobile",
+  "version" : "2.7",
+  "artifactType" : "THEME"
+} ]

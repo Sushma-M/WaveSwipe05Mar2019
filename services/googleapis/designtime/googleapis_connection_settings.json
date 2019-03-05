@@ -1,6 +1,5 @@
 {
   "headers" : { },
-  "proxy" : null,
   "endpointAddress" : "https://maps.googleapis.com/maps/api/geocode/json?address={address}?key={key}",
   "method" : "GET",
   "requestBody" : null,

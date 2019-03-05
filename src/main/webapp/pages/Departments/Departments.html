@@ -1,4 +1,4 @@
-<wm-page data-ng-controller="DepartmentsPageController" name="page1"> 
+<wm-page name="page1"> 
     <wm-left-panel content="leftnav" name="left_panel1"></wm-left-panel> 
     <wm-mobile-navbar name="mobile_navbar1" title="DEPARTMENT" fontunit="px" backbutton="false"> 
         <wm-anchor name="anchor1" iconclass="glyphicon glyphicon-plus" caption="" show="false"></wm-anchor> 
@@ -6,8 +6,8 @@
     <wm-content name="content1"> 
         <wm-page-content columnwidth="12" name="page_content1"> 
             <wm-tabs name="tabs2" height="100%"> 
-                <wm-tabpane name="tabpane2" heading="ENGINEERING"> 
-                    <wm-list listclass="list-group" itemclass="list-group-item" name="ENGLIvelist" dataset="bind:Variables.HrdbEngineeringEmployees.dataSet" on-click="Variables.GoogleapisInvoke.invoke();Variables.goToPage_EmployeesProfile.invoke()"> 
+                <wm-tabpane name="tabpane2" title="ENGINEERING"> 
+                    <wm-list listclass="list-group" itemclass="list-group-item" name="ENGLIvelist" dataset="bind:Variables.HrdbEngineeringEmployees.dataSet" on-click="Variables.GoogleapisInvoke.invoke();Actions.goToPage_EmployeesProfile.invoke()"> 
                         <wm-listtemplate layout="media" name="listtemplate6"> 
                             <wm-container class="media-left" name="container22"> 
                                 <wm-picture class="media-object picture" shape="circle" width="100" name="picture6" picturesource="bind:Variables.HrdbEngineeringEmployees.dataSet[$i].PICURL"></wm-picture> 
@@ -24,8 +24,8 @@
                         </wm-listtemplate> 
                     </wm-list> 
                 </wm-tabpane> 
-                <wm-tabpane name="tabpane3" heading="PS"> 
-                    <wm-list listclass="list-group" itemclass="list-group-item" name="PSLivelist" dataset="bind:Variables.HrdbProfessionalServicesEmployees.dataSet" on-click="Variables.GoogleapisInvoke.invoke();Variables.goToPage_EmployeesProfile.invoke()"> 
+                <wm-tabpane name="tabpane3" title="PS"> 
+                    <wm-list listclass="list-group" itemclass="list-group-item" name="PSLivelist" dataset="bind:Variables.HrdbProfessionalServicesEmployees.dataSet" on-click="Variables.GoogleapisInvoke.invoke();Actions.goToPage_EmployeesProfile.invoke()"> 
                         <wm-listtemplate layout="media" name="listtemplate4"> 
                             <wm-container class="media-left" name="container26"> 
                                 <wm-picture class="media-object picture" shape="circle" width="100" name="picture7" picturesource="bind:Variables.HrdbProfessionalServicesEmployees.dataSet[$i].PICURL"></wm-picture> 
@@ -42,8 +42,8 @@
                         </wm-listtemplate> 
                     </wm-list> 
                 </wm-tabpane> 
-                <wm-tabpane name="tabpane4" heading="ADMIN"> 
-                    <wm-list listclass="list-group" itemclass="list-group-item" name="ADMINLivelist" dataset="bind:Variables.HrdbGeneralAndAdminEmployees.dataSet" on-click="Variables.GoogleapisInvoke.invoke();Variables.goToPage_EmployeesProfile.invoke()"> 
+                <wm-tabpane name="tabpane4" title="ADMIN"> 
+                    <wm-list listclass="list-group" itemclass="list-group-item" name="ADMINLivelist" dataset="bind:Variables.HrdbGeneralAndAdminEmployees.dataSet" on-click="Variables.GoogleapisInvoke.invoke();Actions.goToPage_EmployeesProfile.invoke()"> 
                         <wm-listtemplate layout="media" name="listtemplate5"> 
                             <wm-container class="media-left" name="container30"> 
                                 <wm-picture class="media-object picture" shape="circle" width="100" name="picture8" picturesource="bind:Variables.HrdbGeneralAndAdminEmployees.dataSet[$i].PICURL"></wm-picture> 
@@ -60,8 +60,8 @@
                         </wm-listtemplate> 
                     </wm-list> 
                 </wm-tabpane> 
-                <wm-tabpane name="tabpane5" heading="SALES"> 
-                    <wm-list listclass="list-group" itemclass="list-group-item" name="SALESLivelist" dataset="bind:Variables.HrdbSalesEmployees.dataSet" on-click="Variables.GoogleapisInvoke.invoke();Variables.goToPage_EmployeesProfile.invoke()"> 
+                <wm-tabpane name="tabpane5" title="SALES"> 
+                    <wm-list listclass="list-group" itemclass="list-group-item" name="SALESLivelist" dataset="bind:Variables.HrdbSalesEmployees.dataSet" on-click="Variables.GoogleapisInvoke.invoke();Actions.goToPage_EmployeesProfile.invoke()"> 
                         <wm-listtemplate layout="media" name="listtemplate5_2"> 
                             <wm-container class="media-left" name="container34"> 
                                 <wm-picture class="media-object picture" shape="circle" width="100" name="picture9" picturesource="bind:Variables.HrdbSalesEmployees.dataSet[$i].PICURL"></wm-picture> 
@@ -78,8 +78,8 @@
                         </wm-listtemplate> 
                     </wm-list> 
                 </wm-tabpane> 
-                <wm-tabpane name="tabpane6" heading="MARKETING"> 
-                    <wm-list listclass="list-group" itemclass="list-group-item" name="MKTGLivelist" dataset="bind:Variables.HrdbMarketingEmployees.dataSet" on-click="Variables.GoogleapisInvoke.invoke();Variables.goToPage_EmployeesProfile.invoke()"> 
+                <wm-tabpane name="tabpane6" title="MARKETING"> 
+                    <wm-list listclass="list-group" itemclass="list-group-item" name="MKTGLivelist" dataset="bind:Variables.HrdbMarketingEmployees.dataSet" on-click="Variables.GoogleapisInvoke.invoke();Actions.goToPage_EmployeesProfile.invoke()"> 
                         <wm-listtemplate layout="media" name="listtemplate5_1"> 
                             <wm-container class="media-left" name="container38"> 
                                 <wm-picture class="media-object picture" shape="circle" width="100" name="picture10" picturesource="bind:Variables.HrdbMarketingEmployees.dataSet[$i].PICURL"></wm-picture> 
