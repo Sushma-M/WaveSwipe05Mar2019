@@ -49,7 +49,7 @@ public class HrdbQueryExecutorServiceImpl implements HrdbQueryExecutorService {
         Map<String, Object> params = new HashMap<>(0);
 
 
-        QueryProcedureInput queryInput = new QueryProcedureInput("NoOfEmployee", params, NoOfEmployeeResponse.class);
+        QueryProcedureInput<NoOfEmployeeResponse> queryInput = new QueryProcedureInput<>("NoOfEmployee", params, NoOfEmployeeResponse.class);
 
         queryExecutor.exportNamedQueryData(queryInput, exportOptions, pageable, outputStream);
     }
@@ -71,7 +71,7 @@ public class HrdbQueryExecutorServiceImpl implements HrdbQueryExecutorService {
 
         params.put("data", data);
 
-        QueryProcedureInput queryInput = new QueryProcedureInput("SelectedEmployeeID", params, SelectedEmployeeIdResponse.class);
+        QueryProcedureInput<SelectedEmployeeIdResponse> queryInput = new QueryProcedureInput<>("SelectedEmployeeID", params, SelectedEmployeeIdResponse.class);
 
         queryExecutor.exportNamedQueryData(queryInput, exportOptions, pageable, outputStream);
     }
@@ -91,7 +91,7 @@ public class HrdbQueryExecutorServiceImpl implements HrdbQueryExecutorService {
         Map<String, Object> params = new HashMap<>(0);
 
 
-        QueryProcedureInput queryInput = new QueryProcedureInput("noOfDepartments", params, NoOfDepartmentsResponse.class);
+        QueryProcedureInput<NoOfDepartmentsResponse> queryInput = new QueryProcedureInput<>("noOfDepartments", params, NoOfDepartmentsResponse.class);
 
         queryExecutor.exportNamedQueryData(queryInput, exportOptions, pageable, outputStream);
     }
@@ -111,7 +111,7 @@ public class HrdbQueryExecutorServiceImpl implements HrdbQueryExecutorService {
         Map<String, Object> params = new HashMap<>(0);
 
 
-        QueryProcedureInput queryInput = new QueryProcedureInput("EngineeringEmployees", params, EngineeringEmployeesResponse.class);
+        QueryProcedureInput<EngineeringEmployeesResponse> queryInput = new QueryProcedureInput<>("EngineeringEmployees", params, EngineeringEmployeesResponse.class);
 
         queryExecutor.exportNamedQueryData(queryInput, exportOptions, pageable, outputStream);
     }
@@ -131,7 +131,7 @@ public class HrdbQueryExecutorServiceImpl implements HrdbQueryExecutorService {
         Map<String, Object> params = new HashMap<>(0);
 
 
-        QueryProcedureInput queryInput = new QueryProcedureInput("ProfessionalServicesEmployees", params, ProfessionalServicesEmployeesResponse.class);
+        QueryProcedureInput<ProfessionalServicesEmployeesResponse> queryInput = new QueryProcedureInput<>("ProfessionalServicesEmployees", params, ProfessionalServicesEmployeesResponse.class);
 
         queryExecutor.exportNamedQueryData(queryInput, exportOptions, pageable, outputStream);
     }
@@ -151,7 +151,7 @@ public class HrdbQueryExecutorServiceImpl implements HrdbQueryExecutorService {
         Map<String, Object> params = new HashMap<>(0);
 
 
-        QueryProcedureInput queryInput = new QueryProcedureInput("SalesEmployees", params, SalesEmployeesResponse.class);
+        QueryProcedureInput<SalesEmployeesResponse> queryInput = new QueryProcedureInput<>("SalesEmployees", params, SalesEmployeesResponse.class);
 
         queryExecutor.exportNamedQueryData(queryInput, exportOptions, pageable, outputStream);
     }
@@ -171,7 +171,7 @@ public class HrdbQueryExecutorServiceImpl implements HrdbQueryExecutorService {
         Map<String, Object> params = new HashMap<>(0);
 
 
-        QueryProcedureInput queryInput = new QueryProcedureInput("GeneralAndAdminEmployees", params, GeneralAndAdminEmployeesResponse.class);
+        QueryProcedureInput<GeneralAndAdminEmployeesResponse> queryInput = new QueryProcedureInput<>("GeneralAndAdminEmployees", params, GeneralAndAdminEmployeesResponse.class);
 
         queryExecutor.exportNamedQueryData(queryInput, exportOptions, pageable, outputStream);
     }
@@ -191,7 +191,7 @@ public class HrdbQueryExecutorServiceImpl implements HrdbQueryExecutorService {
         Map<String, Object> params = new HashMap<>(0);
 
 
-        QueryProcedureInput queryInput = new QueryProcedureInput("MarketingEmployees", params, MarketingEmployeesResponse.class);
+        QueryProcedureInput<MarketingEmployeesResponse> queryInput = new QueryProcedureInput<>("MarketingEmployees", params, MarketingEmployeesResponse.class);
 
         queryExecutor.exportNamedQueryData(queryInput, exportOptions, pageable, outputStream);
     }
@@ -211,7 +211,7 @@ public class HrdbQueryExecutorServiceImpl implements HrdbQueryExecutorService {
         Map<String, Object> params = new HashMap<>(0);
 
 
-        QueryProcedureInput queryInput = new QueryProcedureInput("NoOfDepartment", params, NoOfDepartmentResponse.class);
+        QueryProcedureInput<NoOfDepartmentResponse> queryInput = new QueryProcedureInput<>("NoOfDepartment", params, NoOfDepartmentResponse.class);
 
         queryExecutor.exportNamedQueryData(queryInput, exportOptions, pageable, outputStream);
     }
@@ -231,7 +231,7 @@ public class HrdbQueryExecutorServiceImpl implements HrdbQueryExecutorService {
         Map<String, Object> params = new HashMap<>(0);
 
 
-        QueryProcedureInput queryInput = new QueryProcedureInput("TotalBudget", params, TotalBudgetResponse.class);
+        QueryProcedureInput<TotalBudgetResponse> queryInput = new QueryProcedureInput<>("TotalBudget", params, TotalBudgetResponse.class);
 
         queryExecutor.exportNamedQueryData(queryInput, exportOptions, pageable, outputStream);
     }

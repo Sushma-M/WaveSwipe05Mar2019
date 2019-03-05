@@ -23,6 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.wavemaker.commons.wrapper.StringWrapper;
 import com.wavemaker.runtime.data.export.ExportOptions;
 import com.wavemaker.runtime.file.manager.ExportedFileManager;
+import com.wavemaker.runtime.security.xss.XssDisable;
 import com.wavemaker.tools.api.core.annotations.WMAccessVisibility;
 import com.wavemaker.tools.api.core.models.AccessSpecifier;
 import com.wordnik.swagger.annotations.Api;
@@ -57,6 +58,7 @@ public class QueryExecutionController {
     @ApiOperation(value = "Returns downloadable file url for query NoOfEmployee")
     @RequestMapping(value = "/queries/NoOfEmployee/export", method = RequestMethod.POST)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
+    @XssDisable
     public StringWrapper exportNoOfEmployee(@RequestBody ExportOptions exportOptions, Pageable pageable) {
         LOGGER.debug("Exporting named query: NoOfEmployee");
 
@@ -85,6 +87,7 @@ public class QueryExecutionController {
     @ApiOperation(value = "Returns downloadable file url for query SelectedEmployeeID")
     @RequestMapping(value = "/queries/SelectedEmployeeID/export", method = RequestMethod.POST)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
+    @XssDisable
     public StringWrapper exportSelectedEmployeeID(@RequestParam(value = "data") Integer data, @RequestBody ExportOptions exportOptions, Pageable pageable) {
         LOGGER.debug("Exporting named query: SelectedEmployeeID");
 
@@ -113,6 +116,7 @@ public class QueryExecutionController {
     @ApiOperation(value = "Returns downloadable file url for query noOfDepartments")
     @RequestMapping(value = "/queries/noOfDepartments/export", method = RequestMethod.POST)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
+    @XssDisable
     public StringWrapper exportNoOfDepartments(@RequestBody ExportOptions exportOptions, Pageable pageable) {
         LOGGER.debug("Exporting named query: noOfDepartments");
 
@@ -141,6 +145,7 @@ public class QueryExecutionController {
     @ApiOperation(value = "Returns downloadable file url for query EngineeringEmployees")
     @RequestMapping(value = "/queries/EngineeringEmployees/export", method = RequestMethod.POST)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
+    @XssDisable
     public StringWrapper exportEngineeringEmployees(@RequestBody ExportOptions exportOptions, Pageable pageable) {
         LOGGER.debug("Exporting named query: EngineeringEmployees");
 
@@ -169,6 +174,7 @@ public class QueryExecutionController {
     @ApiOperation(value = "Returns downloadable file url for query ProfessionalServicesEmployees")
     @RequestMapping(value = "/queries/ProfessionalServicesEmployees/export", method = RequestMethod.POST)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
+    @XssDisable
     public StringWrapper exportProfessionalServicesEmployees(@RequestBody ExportOptions exportOptions, Pageable pageable) {
         LOGGER.debug("Exporting named query: ProfessionalServicesEmployees");
 
@@ -197,6 +203,7 @@ public class QueryExecutionController {
     @ApiOperation(value = "Returns downloadable file url for query SalesEmployees")
     @RequestMapping(value = "/queries/SalesEmployees/export", method = RequestMethod.POST)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
+    @XssDisable
     public StringWrapper exportSalesEmployees(@RequestBody ExportOptions exportOptions, Pageable pageable) {
         LOGGER.debug("Exporting named query: SalesEmployees");
 
@@ -225,6 +232,7 @@ public class QueryExecutionController {
     @ApiOperation(value = "Returns downloadable file url for query GeneralAndAdminEmployees")
     @RequestMapping(value = "/queries/GeneralAndAdminEmployees/export", method = RequestMethod.POST)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
+    @XssDisable
     public StringWrapper exportGeneralAndAdminEmployees(@RequestBody ExportOptions exportOptions, Pageable pageable) {
         LOGGER.debug("Exporting named query: GeneralAndAdminEmployees");
 
@@ -253,6 +261,7 @@ public class QueryExecutionController {
     @ApiOperation(value = "Returns downloadable file url for query MarketingEmployees")
     @RequestMapping(value = "/queries/MarketingEmployees/export", method = RequestMethod.POST)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
+    @XssDisable
     public StringWrapper exportMarketingEmployees(@RequestBody ExportOptions exportOptions, Pageable pageable) {
         LOGGER.debug("Exporting named query: MarketingEmployees");
 
@@ -281,6 +290,7 @@ public class QueryExecutionController {
     @ApiOperation(value = "Returns downloadable file url for query NoOfDepartment")
     @RequestMapping(value = "/queries/NoOfDepartment/export", method = RequestMethod.POST)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
+    @XssDisable
     public StringWrapper exportNoOfDepartment(@RequestBody ExportOptions exportOptions, Pageable pageable) {
         LOGGER.debug("Exporting named query: NoOfDepartment");
 
@@ -309,6 +319,7 @@ public class QueryExecutionController {
     @ApiOperation(value = "Returns downloadable file url for query TotalBudget")
     @RequestMapping(value = "/queries/TotalBudget/export", method = RequestMethod.POST)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
+    @XssDisable
     public StringWrapper exportTotalBudget(@RequestBody ExportOptions exportOptions, Pageable pageable) {
         LOGGER.debug("Exporting named query: TotalBudget");
 

@@ -20,6 +20,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
+import com.wavemaker.commons.MessageResource;
 import com.wavemaker.runtime.data.dao.WMGenericDao;
 import com.wavemaker.runtime.data.exception.EntityNotFoundException;
 import com.wavemaker.runtime.data.export.DataExportOptions;
@@ -107,7 +108,7 @@ public class UserServiceImpl implements UserService {
         User deleted = this.wmGenericDao.findById(userId);
         if (deleted == null) {
             LOGGER.debug("No User found with id: {}", userId);
-            throw new EntityNotFoundException(String.valueOf(userId));
+            throw new EntityNotFoundException(MessageResource.create("com.wavemaker.runtime.entity.not.found"), User.class.getSimpleName(), userId);
         }
         this.wmGenericDao.delete(deleted);
         return deleted;

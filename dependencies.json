@@ -1,9 +1,11 @@
 [ {
   "name" : "googlemaps",
-  "version" : "5.7",
-  "artifactType" : "PREFAB"
+  "version" : "6.3",
+  "artifactType" : "PREFAB",
+  "artifactDependencyList" : null
 }, {
   "name" : "mobile",
-  "version" : "2.7",
-  "artifactType" : "THEME"
+  "version" : "3.5",
+  "artifactType" : "THEME",
+  "artifactDependencyList" : null
 } ]
